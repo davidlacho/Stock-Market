@@ -8,9 +8,17 @@
 
 /**
  * getInputFromUser
- * @return {[]} [description]
+ * @return {[object]} [purchase: price @p purchase, stockPrices: throughout day]
  */
-const getInputFromUser = () => process.argv[2] || console.log('not a valid input');
+const getInputFromUser = () => {
+  const input = process.argv.slice(2);
+  const newArr = input.map(num => parseInt(num, 10));
+  const newObject = {
+    purchase: newArr[0],
+    stockPrices: newArr.slice(1),
+  };
+  return newObject;
+};
 
 /**
  * ----------------------------------------------------
@@ -38,9 +46,14 @@ const maxProfit = (input, stockPrices) => {
   return -1;
 };
 
-const stockPrices = [45, 24, 35, 31, 40, 38, 11];
+
 const input = getInputFromUser();
-if (input) maxProfit(input, stockPrices);
+const {
+  purchase,
+  stockPrices,
+} = input;
+
+console.log(maxProfit(purchase, stockPrices));
 
 /**
  * ----------------------------------------------------
