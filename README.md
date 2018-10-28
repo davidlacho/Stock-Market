@@ -39,7 +39,7 @@ node index.js 38 45 24 35, 31, 40, 38, 11
 
 ## Summary of what this project demonstrates:
 This project demonstrates:
-  * a "Divide and Conquer" solution where I broke down a problem into two or more sub-problems of the same or related type, until this became simple enough to be solved directly.
+  * A "Divide and Conquer" solution where I broke down a problem into two or more sub-problems of the same or related type, until this became simple enough to be solved directly.
   * Unit testing using Mocha and Chai
   * ES6 Syntax respecting [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
   * JSDOC documentation
