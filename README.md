@@ -33,17 +33,9 @@ node index.js 24 45 24 35, 31, 40, 38, 11
 ### Checking a number against stock prices where a profilt will not be made:
 
 ```
-node index.js 24 45 24 35, 31, 40, 38, 11
+node index.js 38 45 24 35, 31, 40, 38, 11
 ```
 `index.js` will return `-1`.
 
 ## Summary of what this project demonstrates:
 This project demonstrates:
-
-
-
-
-
-## Exercise
-
-##
